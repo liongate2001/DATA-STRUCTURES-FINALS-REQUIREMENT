@@ -49,7 +49,8 @@ public class FinalRequirementYambotAndTequillo {
     // Function to validate input
     private static boolean isValidInput(String input) {
         // Check for at least one alphabet character followed by zero or more alphabet characters separated by commas
-        return input.matches("^[azA-Z]+(,[a-zA-Z]+)*$") && !containsNumeric(input) && !containsFloatingPoint(input) && !containsSpecialCharacter(input);
+        return input.matches("^[a-zA-Z](,[a-zA-Z])*$") && !containsNumeric(input) && !containsFloatingPoint(input) && !containsSpecialCharacter(input);
+
     }
 
     // Check if input contains numerical characters
